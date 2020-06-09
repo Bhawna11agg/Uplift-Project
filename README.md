@@ -8,7 +8,7 @@ Data Structures and Algorithms
 
 Week 1: Team Introduction and communication
 
-Week 2: Introduction of Data Structure and Algorithm, Pointers/Objects (for beginners),Dynamic Programming, Analysis of time and Space complexity, Git and Github(for beginners)
+Week 2: Introduction of Data Structure and Algorithm, Pointers/Objects (for beginners),Arrays, Strings, Analysis of time and Space complexity, Git and Github(for beginners)
 
 Week 3: Classes,Linked Lists - Singly, Doubly, Circular, Stacks, Queues
 
