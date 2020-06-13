@@ -31,7 +31,7 @@ function reverseArray(a) {
     }
     return reverseArr;
 }
-() {
+function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
     const arrCount = parseInt(readLine(), 10);
