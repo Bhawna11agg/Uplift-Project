@@ -1,4 +1,7 @@
-int Solution::firstMissingPositive(vector &A) {
+#include<algorithm>
+#include<iostream>
+using namespace std;
+int Solution::firstMissingPositive(vector<innt> &A) {
     sort(A.begin(), A.end());
     int c = 1;
     for (auto const& i : A)
