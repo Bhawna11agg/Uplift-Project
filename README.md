@@ -27,7 +27,7 @@ Week 4: Greedy method (Knapsack, Prim’s algorithm, Kruskal’s algorithm, Dijk
 
 Week1:  Dynamic programming (0/1 Knapsack, Travelling Salesman Problem, Coin change) Standard Problems to be discussed
 
-Week 2: STL, Any topic which needs to be practiced more
+Week 2: STL, Any topic which needs to be practiced more, Start working on the project
 
 Week 3 & Week 4: Working on the project of menu driven game
 
