@@ -25,7 +25,7 @@ Week 3: Recursion and backtracking along with standard problems - Divide and Con
 Week 4: Greedy method (Knapsack, Prim’s algorithm, Kruskal’s algorithm, Dijkstra, Bellmanford)
 ### **August**
 
-Week1:  Dynamic programming (0/1 Knapsack, Travelling Salesman Problem, Coin change) Standard Problems to be discussed
+Week1:  Dynamic programming (0/1 Knapsack, Travelling Salesman Problem, Coin change) Standard Problems to be discussed, Timed contest of data structures and algorithms done till now (mixed question of advanced and beginner)
 
 Week 2: STL, Any topic which needs to be practiced more, Start working on the project
 
