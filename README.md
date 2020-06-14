@@ -20,17 +20,16 @@ Week 1: Maps (Dictionaries/Hash Maps), Trees, BST, Tree Traversal Techniques
 
 Week 2: Hash table, Graphs
 
-Week 3: Recursion and backtracking along with standard problems - Divide and Conquer, Greedy method (Knapsack, Prim’s algorithm, Kruskal’s algorithm, Dijkstra, Bellmanford)
+Week 3: Recursion and backtracking along with standard problems - Divide and Conquer
 
-Week 4: Dynamic programming (0/1 Knapsack, Travelling Salesman Problem, Coin change) Standard Problems to be discussed
-
+Week 4: Greedy method (Knapsack, Prim’s algorithm, Kruskal’s algorithm, Dijkstra, Bellmanford)
 ### **August**
 
-Week1:  Timed contest of data structures and algorithms done till now (mixed question of advanced and beginner)
+Week1:  Dynamic programming (0/1 Knapsack, Travelling Salesman Problem, Coin change) Standard Problems to be discussed
 
 Week 2: STL, Any topic which needs to be practiced more
 
-Week 3 & Week 4: Solving Questions in Codechef, Codeforces challenges with discussion
+Week 3 & Week 4: Working on the project of menu driven game
 
 Questions shared will be of varied difficulty and will be discussed on a weekly basis with deadlines announced for submitting solutions. 
 
