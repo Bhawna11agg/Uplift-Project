@@ -32,14 +32,24 @@ function main(input) {
 }
 
 function rotateRight(n,k,arr){
+    // arrayReverse(arr,n-k,n-1);
     
-    for(var i=0;i<k;i++){
-        var lastElement=arr[n-1];
-        for(var j=n-1;j>0;j--){
-            arr[j]=arr[j-1];
-        }
-        arr[0]=lastElement;
-    }
+    // arrayReverse(arr,0,n-k-1);
+    // arrayReverse(arr,0,n-1);
+    // rotating array element by element 
+    // for(var i=0;i<k;i++){
+    //     var lastElement=arr[n-1];
+    //     for(var j=n-1;j>0;j--){
+    //         arr[j]=arr[j-1];
+    //     }
+    //     arr[0]=lastElement;
+    // }
+    // reducing the number of rotation
+    k%=n;
+    
+    arrayReverse(arr,n-k,n-1);
+    arrayReverse(arr,0,n-k-1);
+    arrayReverse(arr,0,n-1);
     for(var i=0;i<n;i++){
         if(i==n-1){
             process.stdout.write(arr[i]+"\n");
@@ -47,5 +57,15 @@ function rotateRight(n,k,arr){
             process.stdout.write(arr[i]+" ");
         }
     }
+    
 }
 
+function arrayReverse(arr,k,n){
+    while(k<n){
+        var temp= arr[k];
+        arr[k]=arr[n];
+        arr[n]=temp;
+        k++;
+        n--;
+    }
+}
