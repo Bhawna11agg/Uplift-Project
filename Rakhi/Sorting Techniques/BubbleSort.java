@@ -84,7 +84,7 @@ public class BubbleSort {
  * Best case is O(n)
  * Worst & average case is O(n^2)
  * 
- * Space Complexity : O(1)
+ * Auxiliary Space Complexity : O(1)
  * when a temp variable is used for swapping
  * without temp variable it is 0 but this wont hold true for larger values of number
  * 
