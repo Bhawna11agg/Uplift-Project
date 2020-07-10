@@ -27,7 +27,7 @@ class Solution {
                 } else {
                     cur = insert(root->right, data);
                     root->right = cur;
-               }
+                }
 
                return root;
            }
@@ -47,28 +47,52 @@ class Node {
 };
 
 */
-    void print_left(Node * root){
-        if(root == NULL)
-        {    
-            return;
-        }
-        print_left(root->left);
-        cout << root->data << " ";
+
+struct item
+{
+    Node* n;
+    int hd;
+    item(Node* n, int hd) {
+        this->n = n;
+        this->hd = hd;
     }
-    void topView(Node * root) {
-        print_left(root);
-        Node * temp=root->right;
-        while(temp != NULL){
-            cout << temp->data << " ";
-            temp=temp->right;
-        }
+};
+struct less_than_key
+{
+    inline bool operator() (const item& struct1, const item& struct2)
+    {
+        return (struct1.hd < struct2.hd);
     }
-    
+};
+void topView(Node * root)
+{
+    std::queue<item*> q;
+    std::set<int> s;
+    std::vector<item> tops;
+    q.push(new item(root, 1));
+    while(!q.empty()) {
+        item* top = q.front();
+        q.pop();
+        if(s.find(top->hd) == s.end()) {
+            s.insert(top->hd);
+            tops.push_back(*top);
+        }
+        if(top->n->left)
+            q.push(new item(top->n->left, top->hd - 1));
+        if(top->n->right)
+            q.push(new item(top->n->right, top->hd + 1));
+    }
+    std::sort(tops.begin(), tops.end(), less_than_key());
+    for(std::vector<item>::iterator it = tops.begin(); it != tops.end(); ++it) {
+        std::cout << (*it).n->data << " ";
+    }
+    std::cout << std::endl;
+}
 
 }; //End of Solution
 
 int main() {
-  
+    
     Solution myTree;
     Node* root = NULL;
     
@@ -82,6 +106,7 @@ int main() {
         root = myTree.insert(root, data);
     }
   
-	myTree.topView(root);
+    myTree.topView(root);
+
     return 0;
 }
