@@ -19,16 +19,16 @@ long arrayManipulation(int n, vector<vector<int>> queries) {
         val = queries[i][2];
 
         ans[a] = ans[a] + val;
-        if(b+1 <= n){
-            ans[b+1] = ans[b+1] - val;
+        if(b+1 <= n){                       // this condition is for checking for overflow coz in array fo 5 ele
+            ans[b+1] = ans[b+1] - val;      // if b = 5 then overflow occurs
         }
     }    
 
     for(int i=1;i<=n;i++){
-        pre = pre + ans[i];
+        pre = pre + ans[i];                      //using prefix sum algorithm to find the final array
         ans2.push_back(pre);
         if(pretopre <= pre){
-            pretopre = pre;
+            pretopre = pre;                     // checking for the maximun number in the array
         }
     }
    
