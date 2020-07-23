@@ -1,4 +1,5 @@
 /*val is the number proposed by computer*/
+//Function to guess a number
 void guess(int val)
 {
 	int guessed_val;
