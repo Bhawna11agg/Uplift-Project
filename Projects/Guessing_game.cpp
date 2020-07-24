@@ -12,17 +12,11 @@ int main()
 		cout << "Enter your estimate: ";
 		cin >> guess;
 		if(guess < compGuess)
-		{
 			cout << "Your Guess number is less than the Computer Guess number.\n";
-		}
 		else if(guess > compGuess)
-		{
 			cout << "Your Guess number is greter than the Computer Guess number.\n";
-		}
 		else
-		{	  
 			cout << "Hureyy! Your guess is right!";
-		}
-  }while (guess != compGuess);
+  	}while (guess != compGuess);
 	return 0;
 }
