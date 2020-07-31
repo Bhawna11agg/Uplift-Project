@@ -11,13 +11,13 @@ void poisonousPlants(vector<int> p) {
      it = p.begin();
      int n = p.size();
      int flag = 0;
-     int count = 0;
-     int psuhVal;
-     cout<<"im in"<<endl;
-     while(!abc.empty() || (abc.empty() && flag == 0)){
-         if(flag == 1){
-             abc.pop();
-         }
+     int count = 0;                                       // the concept is :
+     int psuhVal;                                        // make a list of stacks and apppend the stack such that
+     cout<<"im in"<<endl;                                // ot contains elements in decreasing order
+     while(!abc.empty() || (abc.empty() && flag == 0)){  // if any element greater is encountered push it in new stack
+         if(flag == 1){                                  // so next day the top element will be removed
+             abc.pop();                                  // then see if the stacks can be merged so when only one stack is remained
+         }                                               // loop shld exit
          flag = 0;
             int k = p.size();
             for(int i=0;i<k;i++){
