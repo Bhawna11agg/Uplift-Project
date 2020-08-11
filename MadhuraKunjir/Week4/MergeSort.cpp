@@ -45,9 +45,9 @@ void mergeArray(int *arr,int l,int mid,int h){
 
 }
 
-void mergeSort(int *arr,int l,int h){
-    if(l<h){
-    int mid = l + (h-l)/2;  
+void mergeSort(int *arr,int l,int h){                     // Best Case : O(nlogn)
+    if(l<h){                                              // Average Case : O(nlogn)
+    int mid = l + (h-l)/2;                                 // Worst Case : O(nlogn)
     mergeSort(arr,l,mid);
     mergeSort(arr,mid+1,h);
     mergeArray(arr,l,mid,h);
