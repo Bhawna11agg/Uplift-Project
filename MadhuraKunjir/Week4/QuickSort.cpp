@@ -31,9 +31,9 @@ int partition(int *arr,int l,int h){
 
 }
 
-void quicksort(int *arr,int l,int h){
-    if(l < h){
-        int pat = partition(arr,l,h);
+void quicksort(int *arr,int l,int h){                          // Best Case : O(nlogn) 
+    if(l < h){                                                 // Average Case : O(nlogn)
+        int pat = partition(arr,l,h);                          // Worst Case : O(n2)
         quicksort(arr,l,pat);
         quicksort(arr,pat+1,h);
     }
