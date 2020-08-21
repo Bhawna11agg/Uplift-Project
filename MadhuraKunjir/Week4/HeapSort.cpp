@@ -4,7 +4,7 @@ using namespace std;
 
 void Heapify(int *arr,int n){                                    // Creating a Max heap 
                                                                  // Complexity : O(n)
-    for(int i = n; i>= 1; i--){                                  // usual heap creation takes : O(nlogn)
+    for(int i = n; i>= 1; i--){                                  // usual heap creation (i.e. insertion of ele  ) takes : O(nlogn) : insert n ele * log(n) height of heap
           int child1 = 2*i;
           int child2 = 2*(i+1)-1;
           if(child1 <= n && child2 <= n){
@@ -29,7 +29,7 @@ void HeapSort(int *arr,int n){                               // Complexity : O(n
 
     while(n != 1){
          swap(arr[1],arr[n]);
-         Heapify(arr,n-1);
+         Heapify(arr,n-1);                              // swap + heapify is deletion process which takes log(n) as it depens on height of tree
          n--;
     }
          
