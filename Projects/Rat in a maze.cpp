@@ -1,3 +1,5 @@
+/* Author: Pratiksha*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -35,7 +37,7 @@ void BFS(int sx,int sy,int dx,int dy,vector<vector<int> > &dist, vector<vector<p
 }
 
 
-int main(){
+Rat_Maze_Driver(){
 	int n,m;
 	cout<<"Enter maze matrix dimensions"<<endl;
 	cin>>n>>m;
@@ -103,4 +105,4 @@ int main(){
 	}
 	return 0;
 }
-//By Pratiksha
+
