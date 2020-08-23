@@ -1,3 +1,5 @@
+/* Author:  Pratiksha */ 
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -81,7 +83,7 @@ int findResult(int currPlayer,char matrix[3][3],char symbols[3]){
 	return findResult(currPlayer%2 + 1, matrix, symbols);
 }
 
-int main(){
+Tic_Tac_Toe_Driver(){
 	int choosePlayer = rand()%2 + 1;
 	char symbols[3];
 	cout<<"Player "<<choosePlayer<<", select a symbol between X and O"<<endl;
