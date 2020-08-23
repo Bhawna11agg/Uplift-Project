@@ -1,3 +1,6 @@
+/*Author: Prince Gupta */
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -89,7 +92,7 @@ void displayGrid(int grid[N][N])
   }
 }
 
-int main()
+Sudoku_Solver()
 {
 
   int grid[N][N];
