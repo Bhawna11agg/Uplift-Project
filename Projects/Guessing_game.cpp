@@ -3,7 +3,7 @@ Author: Mohit Radadiya
 */
 #include <bits/stdc++.h>
 using namespace std;
-int main()
+Guessing_Game_Driver()
 {
 	int compGuess = rand() % 1500 +1;
 	cout << "Please pick a number between 1 - 1500!\n";
