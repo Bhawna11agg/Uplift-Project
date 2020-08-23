@@ -109,7 +109,7 @@ void Execute(){
 
 }
 
-int main(){
+Snake_Game_Driver(){
 
  Initiate();
  while(!finish){
