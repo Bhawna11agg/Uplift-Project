@@ -1,3 +1,7 @@
+/* Author: Madhura11-1"*/
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
 int height = 20;
@@ -109,7 +113,7 @@ void Execute(){
 
 }
 
-int main(){
+Snake_Game_Driver(){
 
  Initiate();
  while(!finish){
